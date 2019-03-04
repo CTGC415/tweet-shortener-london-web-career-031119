@@ -19,11 +19,11 @@ def word_substituter(tweet)
   words = tweet.split(" ")
   words.map do |word|
     if dictionary.keys.to_s.include?(word)
-      binding.pry
       word = dictionary[word]
     end
   end
   words.join(" ")
+  puts words
 end
 
 def bulk_tweet_shortener(tweet)

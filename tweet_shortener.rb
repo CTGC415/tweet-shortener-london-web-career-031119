@@ -19,6 +19,7 @@ def word_substituter(tweet)
   words = tweet.split(" ")
   words.map do |word|
     if dictionary.keys.include?(word)
+      binding.pry
       word = dictionary[word]
     end
   end
